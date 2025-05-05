@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirect Halaman Photobooth</title>
+  <script>
+    // Fungsi sederhana deteksi perangkat mobile
+    function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    window.onload = function() {
+      if (isMobile()) {
+        window.location.href = 'mobile.html';  // Halaman mobile khusus
+      } else {
+        window.location.href = 'desktop.html'; // Halaman desktop khusus
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Memuat halaman...</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    background-image: url('assets/Desktop 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 19%;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.download-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.download-button img {
+    width: 20vw;
+    max-width: 100px;
+    height: auto;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.close-button img {
+    width: 10vw;
+    max-width: 50px;
+    height: auto;
+}

@@ -1,0 +1,94 @@
+body {
+  background-image: url('assets/Latar.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 19%;
+  width: 100%;               
+  min-height: 100vh;     
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#figma-frame {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 35%;
+  left: 46%;
+  transform: translate(-45%, -30%);
+  border-radius: 8px;
+  overflow: hidden;
+  background-image: url('assets/Group\ 30.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 10;
+}
+
+.circle-button {
+  width: 60px;            
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  margin-left: 42%;
+  margin-top: 102%;
+  position: absolute;
+  z-index: 10;
+}
+
+.circle-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;
+}
+
+/* #previewContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 580px;
+  height: 200px;
+  z-index: 9;
+} */
+
+#camera {
+  width: 99%;
+  height: 75%;
+  margin-left: 1%;
+  margin-top: 18%;
+  object-fit: cover;
+  border-radius: 0px; /* opsional, untuk menyesuaikan bentuk bingkai */
+}
+
+#countdown {
+  display: none;
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 90px;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: whitesmoke;
+  font-weight: bold;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+img {
+  image-rendering: crisp-edges; /* Mencegah blur */
+  width: auto;
+  height: auto;
+}
+

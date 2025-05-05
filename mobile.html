@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Photobooth</title>
+  <link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+  <!-- <h1>
+    <img src="assets/Cheese.png" alt="Judul Gambar" style="width: 200px; height: 55px; vertical-align: middle; margin-left: 30%; margin-top: 45%; position: relative;">
+</h1> -->
+  <div id="figma-frame">
+    <video id="camera" autoplay playsinline></video>
+  </div>
+
+  <div id="figma-frame"></div>
+
+  <canvas id="canvas" width="480" height="640" style="display:none;"></canvas> 
+
+  <div id="previewContainer" style="text-align:center; margin-top:20px;"></div>
+
+  <button id="downloadButton" style="display:none; margin-top:20px;"><img src="assets/Frame 8.png" alt="Tombol Gambar" width="50" height="50"></button>
+
+  <div class="controls">
+    <button id="snap" class="circle-button">
+      <img src="assets/Kamera.png" alt="Tombol">
+    </button>
+  </div>
+
+  <div id="countdown" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:80px; color:whitesmoke; font-weight:bold;"></div>
+
+  <script src="mobile.js"></script>
+</body>
+</html>
